@@ -1,0 +1,42 @@
+.formularioContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caixasContent,
+.listasContent{
+    margin: 0 1em;
+}
+
+button{
+    width: 100%;
+    max-width: 200px;
+    font-size: 2em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.dadosContent h2{
+    text-transform: capitalize;
+    font-size: 3em;
+    text-align: center;
+}
+
+.dadosResultadoContent{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    margin: 2em;
+}
+
+.dadosBasicosContentForm,
+.dadosCalculadosContentForm,
+.dadosAdicionaisContentForm{
+    margin: 0 3em;
+}
+
