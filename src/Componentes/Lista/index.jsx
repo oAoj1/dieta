@@ -8,6 +8,7 @@ export default function Lista(props){
             </label>
 
             <select 
+                required
                 value={props.valor}
                 onChange={variavel => props.setEstado(variavel.target.value)}>
                 {props.alternativas.map((itens,index)=>(

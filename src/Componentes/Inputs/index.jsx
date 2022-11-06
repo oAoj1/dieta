@@ -6,6 +6,7 @@ export default function Inputs(props){
             <label htmlFor="">{props.titulo}</label>
 
             <input
+                required
                 placeholder={props.escrito}
                 value={props.valor}
                 onChange={variavel => props.setEstado(variavel.target.value)}

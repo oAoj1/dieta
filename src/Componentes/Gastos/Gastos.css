@@ -3,7 +3,8 @@
     max-width: 50%;
 }
 
-.gastoBasalContent{
+.gastoBasalContent,
+.gastoDiarioContent{
     margin: 1em auto;
 }
 

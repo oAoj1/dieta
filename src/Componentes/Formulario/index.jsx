@@ -874,42 +874,42 @@ export default function Formulario(){
             </form>
 
         {caloria > 1 ? 
-        <div className="dadosContent">
-            <h2>{nome}</h2>
+            <div className="dadosContent">
+                <h2>{nome}</h2>
 
-            <div className="dadosResultadoContent">
-                
-                <div className="dadosBasicosContentForm">
-                    <DadosBasicos
-                        nome={nome}
-                        idade={idade}
-                        altura={altura}
-                        peso={peso}
-                        sexo={sexo}
-                    />
-                </div>
-                
-                <div className="dadosCalculadosContentForm">
-                    <DadosCalculos
-                        calorias={caloria}
-                        gastoDiario={gastoDiario}
-                        gastoBasal={gastoBasal}
-                    />
-                </div>
-                
-                <div className="dadosAdicionaisContentForm">
-                    <DadosAdicionais
-                        imc={imc}
-                        agua={agua}
-                    />
-                </div>
+                <div className="dadosResultadoContent">
+                    
+                    <div className="dadosBasicosContentForm">
+                        <DadosBasicos
+                            nome={nome}
+                            idade={idade}
+                            altura={altura}
+                            peso={peso}
+                            sexo={sexo}
+                        />
+                    </div>
+                    
+                    <div className="dadosCalculadosContentForm">
+                        <DadosCalculos
+                            calorias={caloria}
+                            gastoDiario={gastoDiario}
+                            gastoBasal={gastoBasal}
+                        />
+                    </div>
+                    
+                    <div className="dadosAdicionaisContentForm">
+                        <DadosAdicionais
+                            imc={imc}
+                            agua={agua}
+                        />
+                    </div>
 
-                <div className='dadosInfoContentForm'>
-                    <DadosInfo></DadosInfo>
+                    <div className='dadosInfoContentForm'>
+                        <DadosInfo></DadosInfo>
+                    </div>
+                    
                 </div>
-                
-            </div>
-        </div> : ''}
+            </div> : ''}
 
         </div>
         
