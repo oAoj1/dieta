@@ -1,3 +1,4 @@
+import './index.css'
 import Formulario from "./Formulario";
 
 export default function App(){

@@ -1,0 +1,50 @@
+.tabelaIMCContent{
+    max-width: max-content;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.tabelaIMCContent thead{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.tabelaIMCContent thead tr td{
+    text-align: center;
+    padding: 0 10px;
+    border-bottom: 2px solid #000;
+}
+
+.tabelaIMCContent tbody tr th{
+    padding: 5px;
+    font-weight: normal;
+}
+
+.tabelaIMCContent .roxo{
+    background-color: rgba(43, 226, 226,0.7);
+}
+
+.tabelaIMCContent .azul{
+    background-color: rgba(0, 255, 13,0.7);
+}
+
+.tabelaIMCContent .laranja{
+    background-color: rgba(255, 165, 0,0.7);
+}
+
+.tabelaIMCContent .vermelhoClaro{
+    background-color: rgba(255, 68, 68,0.7);
+}
+
+.tabelaIMCContent .vermelho{
+    background-color: rgba(255, 0, 0,0.7);
+}
+
+.tabelaIMCContent .vermelhoEscuro{
+    background-color: rgba(160, 0, 0,0.7);
+}

@@ -5,6 +5,7 @@ import Lista from "../Lista"
 import DadosBasicos from '../Dados/Basicos'
 import DadosCalculos from '../Dados/Calculos'
 import DadosAdicionais from '../Dados/Adicionais'
+import DadosInfo from '../Dados/Informacoes'
 
 export default function Formulario(){
 
@@ -901,6 +902,10 @@ export default function Formulario(){
                         imc={imc}
                         agua={agua}
                     />
+                </div>
+
+                <div className='dadosInfoContentForm'>
+                    <DadosInfo></DadosInfo>
                 </div>
                 
             </div>

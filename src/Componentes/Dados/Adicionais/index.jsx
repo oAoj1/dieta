@@ -1,3 +1,4 @@
+import TabelaIMC from '../../Tabela'
 import './Adicionais.css'
 
 export default function DadosAdicionais(props){

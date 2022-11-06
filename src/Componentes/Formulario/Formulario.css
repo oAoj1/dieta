@@ -21,6 +21,10 @@ button{
     border-radius: 10px;
 }
 
+.dadosContent{
+    padding: 1em 0;
+}
+
 .dadosContent h2{
     text-transform: capitalize;
     font-size: 3em;
@@ -29,6 +33,7 @@ button{
 
 .dadosResultadoContent{
     display: flex;
+    flex-wrap: wrap;
     margin: auto;
     justify-content: center;
     margin: 2em;
