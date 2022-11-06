@@ -1,5 +1,5 @@
 import './index.css'
-import Formulario from "./Formulario";
+import Formulario from "./Componentes/Formulario";
 
 export default function App(){
   return(

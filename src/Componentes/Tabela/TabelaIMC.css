@@ -1,6 +1,6 @@
 .tabelaIMCContent{
     max-width: max-content;
-    margin: auto;
+    margin:2em auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
