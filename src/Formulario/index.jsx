@@ -872,7 +872,8 @@ export default function Formulario(){
 
             </form>
 
-        {caloria > 1 ? <div className="dadosContent">
+        {caloria > 1 ? 
+        <div className="dadosContent">
             <h2>{nome}</h2>
 
             <div className="dadosResultadoContent">
@@ -904,8 +905,6 @@ export default function Formulario(){
                 
             </div>
         </div> : ''}
-        
-               
 
         </div>
         

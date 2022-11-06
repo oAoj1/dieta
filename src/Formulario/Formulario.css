@@ -40,3 +40,27 @@ button{
     margin: 0 3em;
 }
 
+@media screen and (max-width:1000px){
+    .formularioContent{
+        display: flex;
+        flex-direction: column;
+    }
+
+    button{
+        margin: 1em 0 2em 0;
+    }
+
+    .dadosResultadoContent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dadosBasicosContentForm,
+    .dadosCalculadosContentForm,
+    .dadosAdicionaisContentForm{
+        margin: 1em 0;
+    }
+
+}
