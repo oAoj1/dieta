@@ -13,9 +13,10 @@
     max-width: 400px;
     font-size: 1.5em;
     border-radius: 20px;
-    margin-left: 0.3em;
+    margin-left: 0.1em;
     cursor: pointer;
     padding: 10px;
     outline: 0;
     border: 1px solid #000;
+    box-shadow: 5px 5px 1px #000;
 }

@@ -1,6 +1,11 @@
 .formularioContent{
+    max-width: max-content;
+    margin:auto;
+    padding: 2em;
+    border-radius: 20px;
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -58,6 +63,34 @@ button:active{
 .dadosCalculadosContentForm,
 .dadosAdicionaisContentForm{
     margin: 0 3em;
+}
+
+.nomeIdadeContent,
+.pesoAlturaContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nomeIdadeContent .inputContent:nth-child(1){
+    width: 400px;
+}
+
+.nomeIdadeContent .inputContent:nth-child(2),
+.pesoAlturaContent .inputContent:nth-child(2),
+.pesoAlturaContent .inputContent:nth-child(3){
+    width: 130px;
+    margin: 0 1em;
+}
+
+.atividadesContent{
+    width: 600px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.botaoContent{
+    margin: 2em 0;
 }
 
 @media screen and (max-width:1000px){

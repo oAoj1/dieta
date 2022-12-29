@@ -1,4 +1,7 @@
 import './Formulario.css'
+import Slide from 'react-reveal/Slide';
+import Flip from 'react-reveal/Flip';
+import Bounce from 'react-reveal/Bounce';
 import { useState } from "react"
 import Inputs from "../Inputs"
 import Lista from "../Lista"
@@ -15,6 +18,7 @@ export default function Formulario(){
     ]
 
     const listaIntensidade = [
+        "Sedentário",
         "Leve",
         "Moderada",
         "Intensa"
@@ -38,7 +42,7 @@ export default function Formulario(){
     const [sexo,setSexo] = useState("")
     const [intensidade,setIntensidade] = useState("")
     const [frequencia,setFrequencia] = useState("")
-    const [idade,setIdade] = useState("")
+    const [idade,setIdade] = useState()
     const [meta,setMeta] = useState("")
     const [imc,setImc] = useState("")
     const [agua,setAgua] = useState("")
@@ -57,7 +61,7 @@ export default function Formulario(){
             if(sexo == "Feminino"){
                 const CalcularGastoBasal = ((58.317 * peso) - 31.1).toFixed(2)
                 setGastoBasal(CalcularGastoBasal)
-
+                
                 if(intensidade == "Leve"){
                     const CalcularGastoDiario = CalcularGastoBasal * 1.55
                     setGastoDiario(CalcularGastoDiario)
@@ -111,6 +115,24 @@ export default function Formulario(){
                             setCaloria(CalcularCaloria)
         
                         }
+
+                }else{
+                    const CalcularGastoDiario = CalcularGastoBasal * 1
+                    setGastoDiario(CalcularGastoDiario)
+
+                    if(meta == "Emagrecer"){
+                        const CalcularCaloria = CalcularGastoDiario - 500
+                        setCaloria(CalcularCaloria)
+    
+                    }else if(meta == "Manter o peso"){
+                        const CalcularCaloria = CalcularGastoDiario * 1
+                        setCaloria(CalcularCaloria)
+    
+                    }else if(meta == "Ganhar massa"){
+                        const CalcularCaloria = CalcularGastoDiario + 500
+                        setCaloria(CalcularCaloria)
+    
+                    }
 
                 }
 
@@ -171,6 +193,24 @@ export default function Formulario(){
                             setCaloria(CalcularCaloria)
         
                         }
+
+                }else{
+                    const CalcularGastoDiario = CalcularGastoBasal * 1
+                    setGastoDiario(CalcularGastoDiario)
+
+                    if(meta == "Emagrecer"){
+                        const CalcularCaloria = CalcularGastoDiario - 500
+                        setCaloria(CalcularCaloria)
+    
+                    }else if(meta == "Manter o peso"){
+                        const CalcularCaloria = CalcularGastoDiario * 1
+                        setCaloria(CalcularCaloria)
+    
+                    }else if(meta == "Ganhar massa"){
+                        const CalcularCaloria = CalcularGastoDiario + 500
+                        setCaloria(CalcularCaloria)
+    
+                    }
 
                 }
                 
@@ -236,6 +276,24 @@ export default function Formulario(){
         
                         }
 
+                }else{
+                    const CalcularGastoDiario = CalcularGastoBasal * 1
+                    setGastoDiario(CalcularGastoDiario)
+
+                    if(meta == "Emagrecer"){
+                        const CalcularCaloria = CalcularGastoDiario - 500
+                        setCaloria(CalcularCaloria)
+    
+                    }else if(meta == "Manter o peso"){
+                        const CalcularCaloria = CalcularGastoDiario * 1
+                        setCaloria(CalcularCaloria)
+    
+                    }else if(meta == "Ganhar massa"){
+                        const CalcularCaloria = CalcularGastoDiario + 500
+                        setCaloria(CalcularCaloria)
+    
+                    }
+
                 }
 
             }else if(sexo == "Masculino"){
@@ -296,6 +354,24 @@ export default function Formulario(){
                             setCaloria(CalcularCaloria)
         
                         }
+
+                }else{
+                    const CalcularGastoDiario = CalcularGastoBasal * 1
+                    setGastoDiario(CalcularGastoDiario)
+
+                    if(meta == "Emagrecer"){
+                        const CalcularCaloria = CalcularGastoDiario - 500
+                        setCaloria(CalcularCaloria)
+    
+                    }else if(meta == "Manter o peso"){
+                        const CalcularCaloria = CalcularGastoDiario * 1
+                        setCaloria(CalcularCaloria)
+    
+                    }else if(meta == "Ganhar massa"){
+                        const CalcularCaloria = CalcularGastoDiario + 500
+                        setCaloria(CalcularCaloria)
+    
+                    }
 
                 }
 
@@ -361,6 +437,24 @@ export default function Formulario(){
         
                         }
 
+                }else{
+                    const CalcularGastoDiario = CalcularGastoBasal * 1
+                    setGastoDiario(CalcularGastoDiario)
+
+                    if(meta == "Emagrecer"){
+                        const CalcularCaloria = CalcularGastoDiario - 500
+                        setCaloria(CalcularCaloria)
+    
+                    }else if(meta == "Manter o peso"){
+                        const CalcularCaloria = CalcularGastoDiario * 1
+                        setCaloria(CalcularCaloria)
+    
+                    }else if(meta == "Ganhar massa"){
+                        const CalcularCaloria = CalcularGastoDiario + 500
+                        setCaloria(CalcularCaloria)
+    
+                    }
+
                 }
 
             }else if(sexo == "Masculino"){
@@ -420,6 +514,24 @@ export default function Formulario(){
                             setCaloria(CalcularCaloria)
         
                         }
+
+                }else{
+                    const CalcularGastoDiario = CalcularGastoBasal * 1
+                    setGastoDiario(CalcularGastoDiario)
+
+                    if(meta == "Emagrecer"){
+                        const CalcularCaloria = CalcularGastoDiario - 500
+                        setCaloria(CalcularCaloria)
+    
+                    }else if(meta == "Manter o peso"){
+                        const CalcularCaloria = CalcularGastoDiario * 1
+                        setCaloria(CalcularCaloria)
+    
+                    }else if(meta == "Ganhar massa"){
+                        const CalcularCaloria = CalcularGastoDiario + 500
+                        setCaloria(CalcularCaloria)
+    
+                    }
 
                 }
 
@@ -485,6 +597,24 @@ export default function Formulario(){
         
                         }
 
+                }else{
+                    const CalcularGastoDiario = CalcularGastoBasal * 1
+                    setGastoDiario(CalcularGastoDiario)
+
+                    if(meta == "Emagrecer"){
+                        const CalcularCaloria = CalcularGastoDiario - 500
+                        setCaloria(CalcularCaloria)
+    
+                    }else if(meta == "Manter o peso"){
+                        const CalcularCaloria = CalcularGastoDiario * 1
+                        setCaloria(CalcularCaloria)
+    
+                    }else if(meta == "Ganhar massa"){
+                        const CalcularCaloria = CalcularGastoDiario + 500
+                        setCaloria(CalcularCaloria)
+    
+                    }
+
                 }
 
             }else if(sexo == "Masculino"){
@@ -544,6 +674,24 @@ export default function Formulario(){
                             setCaloria(CalcularCaloria)
         
                         }
+
+                }else{
+                    const CalcularGastoDiario = CalcularGastoBasal * 1
+                    setGastoDiario(CalcularGastoDiario)
+
+                    if(meta == "Emagrecer"){
+                        const CalcularCaloria = CalcularGastoDiario - 500
+                        setCaloria(CalcularCaloria)
+    
+                    }else if(meta == "Manter o peso"){
+                        const CalcularCaloria = CalcularGastoDiario * 1
+                        setCaloria(CalcularCaloria)
+    
+                    }else if(meta == "Ganhar massa"){
+                        const CalcularCaloria = CalcularGastoDiario + 500
+                        setCaloria(CalcularCaloria)
+    
+                    }
 
                 }
 
@@ -609,6 +757,24 @@ export default function Formulario(){
         
                         }
 
+                }else{
+                    const CalcularGastoDiario = CalcularGastoBasal * 1
+                    setGastoDiario(CalcularGastoDiario)
+
+                    if(meta == "Emagrecer"){
+                        const CalcularCaloria = CalcularGastoDiario - 500
+                        setCaloria(CalcularCaloria)
+    
+                    }else if(meta == "Manter o peso"){
+                        const CalcularCaloria = CalcularGastoDiario * 1
+                        setCaloria(CalcularCaloria)
+    
+                    }else if(meta == "Ganhar massa"){
+                        const CalcularCaloria = CalcularGastoDiario + 500
+                        setCaloria(CalcularCaloria)
+    
+                    }
+
                 }
 
             }else if(sexo == "Masculino"){
@@ -668,6 +834,24 @@ export default function Formulario(){
                             setCaloria(CalcularCaloria)
         
                         }
+
+                }else{
+                    const CalcularGastoDiario = CalcularGastoBasal * 1
+                    setGastoDiario(CalcularGastoDiario)
+
+                    if(meta == "Emagrecer"){
+                        const CalcularCaloria = CalcularGastoDiario - 500
+                        setCaloria(CalcularCaloria)
+    
+                    }else if(meta == "Manter o peso"){
+                        const CalcularCaloria = CalcularGastoDiario * 1
+                        setCaloria(CalcularCaloria)
+    
+                    }else if(meta == "Ganhar massa"){
+                        const CalcularCaloria = CalcularGastoDiario + 500
+                        setCaloria(CalcularCaloria)
+    
+                    }
 
                 }
 
@@ -733,6 +917,24 @@ export default function Formulario(){
         
                         }
 
+                }else{
+                    const CalcularGastoDiario = CalcularGastoBasal * 1
+                    setGastoDiario(CalcularGastoDiario)
+
+                    if(meta == "Emagrecer"){
+                        const CalcularCaloria = CalcularGastoDiario - 500
+                        setCaloria(CalcularCaloria)
+    
+                    }else if(meta == "Manter o peso"){
+                        const CalcularCaloria = CalcularGastoDiario * 1
+                        setCaloria(CalcularCaloria)
+    
+                    }else if(meta == "Ganhar massa"){
+                        const CalcularCaloria = CalcularGastoDiario + 500
+                        setCaloria(CalcularCaloria)
+    
+                    }
+
                 }
 
             }else if(sexo == "Masculino"){
@@ -793,6 +995,24 @@ export default function Formulario(){
         
                         }
 
+                }else{
+                    const CalcularGastoDiario = CalcularGastoBasal * 1
+                    setGastoDiario(CalcularGastoDiario)
+
+                    if(meta == "Emagrecer"){
+                        const CalcularCaloria = CalcularGastoDiario - 500
+                        setCaloria(CalcularCaloria)
+    
+                    }else if(meta == "Manter o peso"){
+                        const CalcularCaloria = CalcularGastoDiario * 1
+                        setCaloria(CalcularCaloria)
+    
+                    }else if(meta == "Ganhar massa"){
+                        const CalcularCaloria = CalcularGastoDiario + 500
+                        setCaloria(CalcularCaloria)
+    
+                    }
+
                 }
 
             }
@@ -804,72 +1024,86 @@ export default function Formulario(){
     return(
         <div>
             <form className="formularioContent" onSubmit={Enviar}>
+                <span style={{
+                    maxWidth:'50%',
+                    margin:'1em 0',
+                    color:'rgba(255, 0, 0,0.7)'
+                }}>OBS: Não considere 100% os calculos finais, essa é uma calculadora desenvolvida por um programador amador e não um profissional na área de nutrição!</span>
+                <Slide left>
+                    <div className="infoInputsContent">
+                        <div className="nomeIdadeContent">
+                            <Inputs
+                                titulo="Nome"
+                                escrito="ex: joao gabriel"
+                                setEstado={nome => setNome(nome)}
+                                valor={nome}
+                            />
 
-            <div className='caixasContent'>
-                <Inputs
-                    titulo="Nome"
-                    escrito="ex: joao gabriel"
-                    setEstado={nome => setNome(nome)}
-                    valor={nome}
-                />
+                            <Inputs
+                                titulo="Idade"
+                                escrito="ex: 18"
+                                setEstado={idade => setIdade(idade)}
+                                valor={idade}
+                            />
+                        </div>
+                        
+                        <div className="pesoAlturaContent">
+                            <Lista
+                                titulo="Sexo"
+                                alternativas={listaSexo}
+                                valor={sexo}
+                                setEstado={sexo => setSexo(sexo)}
+                            />
 
-                <Inputs
-                    titulo="Idade"
-                    escrito="ex: 18"
-                    setEstado={idade => setIdade(idade)}
-                    valor={idade}
-                />
+                            <Inputs
+                                titulo="Peso"
+                                escrito="ex: 80"
+                                setEstado={peso => setPeso(peso)}
+                                valor={peso}
+                            />
 
-                <Inputs
-                    titulo="Peso"
-                    escrito="ex: 80"
-                    setEstado={peso => setPeso(peso)}
-                    valor={peso}
-                />
-
-                <Inputs
-                    titulo="Altura"
-                    escrito="ex: 1.75"
-                    setEstado={altura => setAltura(altura)}
-                    valor={altura}
-                />
-            </div>
-
-
-            <div className='listasContent'>
-                <Lista
-                    titulo="Sexo"
-                    alternativas={listaSexo}
-                    valor={sexo}
-                    setEstado={sexo => setSexo(sexo)}
-                />
-
-                <Lista
-                    titulo="Nivel de atividade"
-                    alternativas={listaIntensidade}
-                    valor={intensidade}
-                    setEstado={intensidade => setIntensidade(intensidade)}
-                />
-
-                {intensidade == "" ? '' : 
+                            <Inputs
+                                titulo="Altura"
+                                escrito="ex: 1.75"
+                                setEstado={altura => setAltura(altura)}
+                                valor={altura}
+                            />
+                        </div>
+                    </div>
+                </Slide>
+                
+            <Slide right>
+                <div className="atividadesContent">
                     <Lista
-                        titulo="Frequencia semanal"
-                        alternativas={listaFrequencia}
-                        valor={frequencia}
-                        setEstado={frequencia => setFrequencia(frequencia)}
-                    />}
+                        titulo="Nivel de atividade"
+                        alternativas={listaIntensidade}
+                        valor={intensidade}
+                        setEstado={intensidade => setIntensidade(intensidade)}
+                    />
 
-                <Lista
-                    titulo="Meta"
-                    alternativas={listaMeta}
-                    valor={meta}
-                    setEstado={meta => setMeta(meta)}
-                />
-            </div>
+                    {intensidade == "" || intensidade == "Sedentário" ? '' : 
+                        <Lista
+                            titulo="Frequencia semanal"
+                            alternativas={listaFrequencia}
+                            valor={frequencia}
+                            setEstado={frequencia => setFrequencia(frequencia)}
+                        />
+                    }
 
-            <div className='botaoContent'>
-                <button type="submit">Enviar</button>
-            </div>
+                    <Lista
+                        titulo="Meta"
+                        alternativas={listaMeta}
+                        valor={meta}
+                        setEstado={meta => setMeta(meta)}
+                    />
+                </div>
+            </Slide>
+            
+            <Flip bottom>
+                <div className='botaoContent'>
+                    <button type="submit">Enviar</button>
+                </div>
+            </Flip>
 
             </form>
 
@@ -878,35 +1112,39 @@ export default function Formulario(){
                 <h2>{nome}</h2>
 
                 <div className="dadosResultadoContent">
+                    <Bounce left>
+                        <div className="dadosBasicosContentForm">
+                            <DadosBasicos
+                                nome={nome}
+                                idade={idade}
+                                altura={altura}
+                                peso={peso}
+                                sexo={sexo}
+                            />
+                        </div>
+                        
+                        <div className="dadosCalculadosContentForm">
+                            <DadosCalculos
+                                calorias={caloria}
+                                gastoDiario={gastoDiario}
+                                gastoBasal={gastoBasal}
+                            />
+                        </div>
+                        
+                        <div className="dadosAdicionaisContentForm">
+                            <DadosAdicionais
+                                imc={imc}
+                                agua={agua}
+                            />
+                        </div>
+                    </Bounce>
                     
-                    <div className="dadosBasicosContentForm">
-                        <DadosBasicos
-                            nome={nome}
-                            idade={idade}
-                            altura={altura}
-                            peso={peso}
-                            sexo={sexo}
-                        />
-                    </div>
+                    <Bounce rigth>
+                        <div className='dadosInfoContentForm'>
+                            <DadosInfo/>
+                        </div>
+                    </Bounce>
                     
-                    <div className="dadosCalculadosContentForm">
-                        <DadosCalculos
-                            calorias={caloria}
-                            gastoDiario={gastoDiario}
-                            gastoBasal={gastoBasal}
-                        />
-                    </div>
-                    
-                    <div className="dadosAdicionaisContentForm">
-                        <DadosAdicionais
-                            imc={imc}
-                            agua={agua}
-                        />
-                    </div>
-
-                    <div className='dadosInfoContentForm'>
-                        <DadosInfo></DadosInfo>
-                    </div>
                     
                 </div>
             </div> : ''}

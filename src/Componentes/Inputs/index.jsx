@@ -10,6 +10,7 @@ export default function Inputs(props){
                 placeholder={props.escrito}
                 value={props.valor}
                 onChange={variavel => props.setEstado(variavel.target.value)}
+                className={props.classe}
             />
         </div>
     )
